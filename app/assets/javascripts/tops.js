@@ -44,6 +44,6 @@ popup.addEventListener('click', () => {
   setTimeout(() => {
     clearInterval(every_second); 
     timer.textContent = "Time UP";
-    window.location.assign('http://localhost:3000/results?count=' + Math.ceil(count/2) );
+    window.location.assign('https://clickclickapp.herokuapp.com/results?count=' + Math.ceil(count/2) );
   }, 10000);
 });
