@@ -1,3 +1,37 @@
+.main {
+  height: 700px;
+  width: auto;
+}
+
 .image {
   text-align: center;
+}
+
+.popup {
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup p {
+  color: white;
+}
+
+.timer {
+  height:20px;
+  position: relative;
+}
+
+.timer h3 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
 }
