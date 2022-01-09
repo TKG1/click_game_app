@@ -10,7 +10,8 @@
   <div class="timer"><h3 class="js-timer text-center"></h3></div>
 
   <div class="image">
-    <%= image_tag 'down', class: 'img-fluid', id: 'js-image', size: '500x500' %>
+    <%= image_tag 'down', class: 'down img-fluid', id: 'js-down-image', size: '500x500' %>
+    <%= image_tag 'up', class: 'up img-fluid', id: 'js-up-image', size: '500x500', style: 'display: none' %>
     <p> カウント: <strong> 0 </strong> 回</p>
   </div>
   <div class="text-center" >

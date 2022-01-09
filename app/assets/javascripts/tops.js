@@ -8,7 +8,8 @@ window.onunload = function() {
 
 let popup = document.querySelector('.popup');
 let button = document.querySelector('#js-click');
-let image = document.querySelector('#js-image');
+let downimage = document.querySelector('#js-down-image');
+let upimage = document.querySelector('#js-up-image');
 let counter = document.querySelector('strong');
 let timer = document.querySelector('.js-timer')
 let count = 0;
@@ -21,11 +22,13 @@ popup.addEventListener('click', () => {
     count += 1;
     
     if((count % 2) == 0) {
-      image.src = '/assets/down.jpg'
+      upimage.style.display ="none";
+      downimage.style.display ="inline";
       counter.textContent = (count / 2);
       return 
     }
-    image.src = '/assets/top.jpg'
+    downimage.style.display ="none";
+    upimage.style.display ="inline";
   });
   
   // 1秒ごとに実行
